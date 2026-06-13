@@ -1,0 +1,43 @@
+{
+  "provider": "aerisweather",
+  "providerName": "AerisWeather / Xweather",
+  "blogURL": "https://www.xweather.com/blog",
+  "lastFetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "From sparse datapoints to rich maps",
+      "url": "https://www.xweather.com/blog/from-sparse-datapoints-to-rich-maps",
+      "date": "2026-06-02",
+      "category": "Science and innovation",
+      "description": "A deep learning model that predicts ground-level weather across entire areas, even where sensors don't exist, delivering results that outperform traditional high-resolution forecasts."
+    },
+    {
+      "title": "How weather really shapes your EV range: the 2026 EV range report is out",
+      "url": "https://www.xweather.com/blog/how-weather-shapes-your-ev-range-2026",
+      "date": "2026-04-02",
+      "category": "News",
+      "description": "The 2026 EV range report identifies US states, European regions, and specific highways that enhance or diminish electric vehicle range based on weather conditions."
+    },
+    {
+      "title": "From banned words to global standards: The evolution of weather alerts",
+      "url": "https://www.xweather.com/blog/the-evolution-of-weather-alerts",
+      "date": "2026-02-11",
+      "category": "Developer",
+      "description": "Examines how fragmented warning systems have been transformed into a unified, global alerts API for more consistent weather communications."
+    },
+    {
+      "title": "Connect AI agents to live weather data with the Xweather MCP",
+      "url": "https://www.xweather.com/blog/connect-ai-agents-to-weather-data-with-xweather-mcp",
+      "date": "2025-10-16",
+      "category": "Developer",
+      "description": "Demonstrates integration of OpenAI with the Xweather MCP server to enable real-time forecasts and decision-making capabilities."
+    },
+    {
+      "title": "AI-native weather: introducing the Xweather MCP server",
+      "url": "https://www.xweather.com/blog/introducing-the-xweather-mcp-server",
+      "date": "2025-10-09",
+      "category": "Developer",
+      "description": "Introduces a new interface allowing LLMs and AI agents to access weather data trusted by NASA and Fortune 100 organizations."
+    }
+  ]
+}

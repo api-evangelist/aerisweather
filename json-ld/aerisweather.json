@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AerisWeather / Xweather",
+  "url": "https://www.xweather.com",
+  "description": "Comprehensive weather data REST API providing forecasts, observations, severe weather alerts, historical data, satellite imagery, and maps for global locations. Now operating as Xweather (acquired by Vaisala in 2022), the platform offers 60+ endpoints covering current conditions, forecasts up to 15 days, air quality, lightning, maritime weather, road conditions, wildfires, earthquakes, and tropical cyclones.",
+  "sameAs": [
+    "https://github.com/aerisweather",
+    "https://www.linkedin.com/company/aerisweather",
+    "https://x.com/xweather_"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Xweather Weather API",
+    "url": "https://www.xweather.com/products/weather-api",
+    "description": "RESTful weather data API providing access to 60+ endpoints for current conditions, forecasts, observations, severe weather alerts, historical data, air quality, lightning, maritime weather, road conditions, and more for global locations.",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Weather API",
+        "url": "https://www.xweather.com/docs/weather-api",
+        "category": "Weather Data"
+      }
+    ]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://www.xweather.com/support",
+    "contactType": "technical support"
+  },
+  "knowsAbout": [
+    "Weather Forecasting",
+    "Severe Weather Alerts",
+    "Air Quality",
+    "Lightning Data",
+    "Maritime Weather",
+    "Road Weather Conditions",
+    "Satellite Imagery",
+    "Historical Climate Data",
+    "Tropical Cyclones",
+    "Wildfire Data",
+    "Earthquake Data"
+  ]
+}
