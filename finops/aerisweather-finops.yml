@@ -1,0 +1,40 @@
+name: AerisWeather (Xweather) FinOps
+description: Financial operations guidance for managing costs when using the Xweather Weather API (formerly AerisWeather). The Flex subscription model bills on API call volume per billing period, making cost control primarily a function of managing request volume.
+url: https://www.xweather.com/products/weather-api
+cost_model:
+  type: volume_based
+  billing_period: monthly
+  currency: EUR
+  description: Pricing is based on total API calls consumed per billing period (month). Plans scale from 1 million to 10+ million calls per month with custom enterprise options available.
+optimization_strategies:
+  - name: Use Batch Requests
+    description: Combine multiple location queries or data types into a single batch API request to reduce total call count and stay within plan limits.
+  - name: Cache Responses
+    description: Cache API responses client-side for data that does not change frequently (e.g., normals, places data) to avoid redundant calls.
+  - name: Monitor Rate Limit Headers
+    description: Track X-RateLimit-Remaining-Period and X-RateLimit-Remaining-Minute response headers to monitor consumption in real time and avoid unexpected overages.
+  - name: Right-Size Your Plan
+    description: Select a Flex plan tier that matches expected monthly call volume. The pricing per call decreases at higher tiers (e.g., 10M calls at ~EUR 0.095/1K vs 1M at EUR 0.300/1K).
+  - name: Use Developer Trial for Testing
+    description: Leverage the free 30-day developer trial for integration testing and load estimation before committing to a paid plan.
+  - name: Limit Endpoint Scope
+    description: Request only the data endpoints and fields needed for your use case. Avoid polling high-frequency endpoints (e.g., lightning, observations) at unnecessary intervals.
+  - name: Optimize Polling Frequency
+    description: Align data refresh rates to actual update frequencies. Many endpoints (forecasts, normals, tides) do not change minute-to-minute and can be polled less frequently.
+cost_visibility:
+  - Subscription tier determines total call allowance per billing period.
+  - Real-time consumption tracked via X-RateLimit-Period response headers.
+  - Dashboard access through the Xweather account portal provides usage visibility.
+pricing_tiers_summary:
+  - calls: 1000000
+    price_eur: 300
+    price_per_1k_eur: 0.30
+  - calls: 3000000
+    price_eur: 600
+    price_per_1k_eur: 0.20
+  - calls: 5000000
+    price_eur: 700
+    price_per_1k_eur: 0.14
+  - calls: 10000000
+    price_eur: 950
+    price_per_1k_eur: 0.095

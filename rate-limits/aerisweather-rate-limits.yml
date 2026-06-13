@@ -1,0 +1,22 @@
+name: AerisWeather (Xweather) Rate Limits
+description: Rate limiting policies for the Xweather Weather API (formerly AerisWeather). The API enforces both minutely and period-based (billing cycle) rate limits determined by the active subscription plan. Specific numerical limits vary by subscription tier.
+url: https://www.xweather.com/docs/weather-api/getting-started/rate-limiting/
+enforcement:
+  - type: minutely
+    description: A per-minute request cap is enforced for all subscription tiers. The exact limit depends on the subscription plan.
+    header_limit: X-RateLimit-Limit-Minute
+    header_remaining: X-RateLimit-Remaining-Minute
+    header_reset: X-RateLimit-Reset-Minute
+  - type: period
+    description: A per-billing-period (monthly) request cap is enforced based on the subscribed call volume (e.g., 1M, 3M, 5M, or 10M calls per month).
+    header_limit: X-RateLimit-Limit-Period
+    header_remaining: X-RateLimit-Remaining-Period
+    header_reset: X-RateLimit-Reset-Period
+exceeded_response:
+  http_status: 429
+  description: When either the minutely or period-based limit is exceeded, the API returns an HTTP 429 status code (Too Many Requests).
+notes:
+  - Rate limits are enforced server-side and vary by subscription tier.
+  - Specific numerical limits per plan are not publicly documented; contact Xweather for details.
+  - Response headers provide real-time tracking of current usage and remaining quota.
+  - The previous API domain api.aerisapi.com remains supported for backward compatibility alongside the current data.api.xweather.com domain.

@@ -1,0 +1,66 @@
+name: AerisWeather (Xweather) Plans and Pricing
+description: Pricing plans for the Xweather Weather API (formerly AerisWeather). Xweather offers a Flex subscription model based on API call volume. A free 30-day developer trial is available with no credit card required and full endpoint access.
+url: https://www.xweather.com/products/weather-api
+plans:
+  - name: Developer Trial
+    description: Free 30-day trial with full access to all Weather API endpoints. No credit card required. Intended for testing and evaluation, not commercial production use.
+    price: 0
+    unit: month
+    features:
+      - Full access to all 60+ API endpoints
+      - Access ID and secret key authentication
+      - JavaScript, Python, iOS, and Android SDK access
+      - API Wizard for testing requests
+      - Weather mapping toolkit access
+    rate_limits:
+      - type: minutely
+        notes: Enforced per subscription; tracked via X-RateLimit headers
+      - type: period
+        notes: Enforced per billing period; tracked via X-RateLimit headers
+  - name: Flex - 1M calls
+    description: Flex subscription plan with 1 million API calls per billing period.
+    price: 300
+    unit: month
+    currency: EUR
+    features:
+      - Access to all Weather API endpoints
+      - Hyper-local weather datasets
+      - Severe weather alerts
+      - Historical data access
+      - Forecast data up to 15 days
+      - Air quality data
+      - Lightning data
+      - Maritime weather
+      - Road weather conditions
+  - name: Flex - 3M calls
+    description: Flex subscription plan with 3 million API calls per billing period.
+    price: 600
+    unit: month
+    currency: EUR
+    features:
+      - All Flex 1M features
+      - Higher call volume capacity
+  - name: Flex - 5M calls
+    description: Flex subscription plan with 5 million API calls per billing period.
+    price: 700
+    unit: month
+    currency: EUR
+    features:
+      - All Flex 1M features
+      - Higher call volume capacity
+  - name: Flex - 10M calls
+    description: Flex subscription plan with 10 million API calls per billing period.
+    price: 950
+    unit: month
+    currency: EUR
+    features:
+      - All Flex 1M features
+      - Highest standard call volume capacity
+  - name: Enterprise
+    description: Custom enterprise plans available. Contact Xweather sales for custom pricing and volume arrangements.
+    price: custom
+    features:
+      - Custom API call volumes
+      - Dedicated support
+      - Custom SLA agreements
+      - Enterprise-grade reliability
