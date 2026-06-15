@@ -39,5 +39,14 @@
       "category": "Developer",
       "description": "Introduces a new interface allowing LLMs and AI agents to access weather data trusted by NASA and Fortune 100 organizations."
     }
-  ]
+  ],
+  "repo": "aerisweather",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/aerisweather",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
