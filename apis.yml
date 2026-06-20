@@ -1,7 +1,7 @@
 aid: aerisweather
 name: AerisWeather
 description: Comprehensive weather data REST API providing forecasts, observations, severe weather alerts, historical data, satellite imagery, and maps for global locations. Now operating as Xweather (acquired by Vaisala in 2022), the platform offers 60+ endpoints covering current conditions, forecasts up to 15 days, air quality, lightning, maritime weather, road conditions, wildfires, earthquakes, and tropical cyclones. Developer toolkits are available for JavaScript, Python, iOS, and Android.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/aerisweather/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -19,7 +19,7 @@ apis:
   - aid: aerisweather:weather-api
     name: Xweather Weather API
     description: RESTful weather data API providing access to 60+ endpoints for current conditions, forecasts, observations, severe weather alerts, historical data, air quality, lightning, maritime weather, road conditions, and more for global locations.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.xweather.com/products/weather-api
     baseURL: https://data.api.xweather.com
     tags:
