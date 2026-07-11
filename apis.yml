@@ -44,6 +44,8 @@ apis:
       - FN: Xweather Support
         url: https://www.xweather.com/support
 common:
+  - type: DomainSecurity
+    url: security/aerisweather-domain-security.yml
   - type: Website
     url: https://www.xweather.com
   - type: Documentation
