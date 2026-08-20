@@ -20,6 +20,15 @@ modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
   - Weather
+  - Forecast
+  - Climate
+  - Severe Weather
+  - Air Quality
+  - Satellite
+  - Mapping
+  - REST
+tags_raw:
+  - Weather
   - Forecasts
   - Climate
   - Severe Weather
@@ -35,6 +44,15 @@ apis:
     humanURL: https://www.xweather.com/products/weather-api
     baseURL: https://data.api.xweather.com
     tags:
+      - Weather
+      - Forecast
+      - Observations
+      - Alerts
+      - Air Quality
+      - Lightning
+      - Maritime
+      - Road Weather
+    tags_raw:
       - Weather
       - Forecasts
       - Observations
